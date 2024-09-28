@@ -1,0 +1,24 @@
+composer create-project laravel/laravel estacao
+composer update
+composer require maatwebsite/excel  --with-all-dependencies
+php artisan make:migration create_solarimentria_dados_table
+Arquivo env em pt-br
+Colocar a base de dados
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1         # Endereço do servidor MySQL
+    DB_PORT=3306              # Porta padrão do MySQL   
+    DB_DATABASE=nome_do_banco # Nome do banco de dados que você vai utilizar
+    DB_USERNAME=usuario       # Usuário do MySQL    
+    DB_PASSWORD=senha   
+composer require laravel/breeze --dev
+php artisan breeze:install react
+npm install
+npm run dev
+Criar o modelo 
+    php artisan make:model SolarimentriaDados
+Criar as controllers
+    php artisan make:controller DadosController
+    php artisan make:controller UploadController
+Criar o importador do excel
+    php artisan make:import SolarimentriaDadosImport --model=SolarimentriaDados
+Adicionar as rotas
