@@ -1,0 +1,46 @@
+# Laravel & PHP
+/vendor
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/storage/*.csv
+/storage/*.xls
+/storage/*.xlsx
+/storage/*.xlsm
+/storage/*.pdf
+/storage/*.docx
+/storage/*.pptx
+/storage/app/public
+/storage/framework/cache/data
+/storage/framework/sessions
+/storage/framework/testing
+/storage/framework/views
+/storage/logs
+.env
+.phpunit.result.cache
+Homestead.yaml
+Homestead.json
+/.vagrant
+.idea
+/.phpunit.result.cache
+.phpunit.result.cache
+.phpstorm.meta.php
+/.env
+
+# Laravel specific logs and caches
+bootstrap/cache/*
+!bootstrap/cache/.gitignore
+
+# Composer
+composer.lock
+composer.phar
+
+# npm and yarn
+yarn-error.log
+npm-debug.log
+node_modules/
+
+# IDE Specific Files
+/.vscode
+/.phpstorm.meta.php
